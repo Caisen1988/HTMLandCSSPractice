@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.main{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.blue{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    border: 10px solid blue;
+}
+.black{
+    position: absolute;
+    margin-left: 10px;
+    border: 10px solid black;
+}
+.red{
+    border: 10px solid red;
+}
+.yellow{
+    border: 10px solid yellow;
+}
+.green{
+    border: 10px solid green;
+}
