@@ -8,23 +8,37 @@
     height: 100px;
     border-radius: 50%;
 }
+
+.conner{
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left:-200px;
+    margin-top:-50px;
+}
 .blue{
-    position: relative;
-    top: 50%;
-    left: 50%;
+    position: absolute;
     border: 10px solid blue;
 }
 .black{
     position: absolute;
-    margin-left: 10px;
+    margin-left: 140px;
     border: 10px solid black;
 }
 .red{
+    position: absolute;
+    margin-left: 280px;
     border: 10px solid red;
 }
 .yellow{
+    position: absolute;
+    margin-left: 70px;
+    margin-top: 60px;
     border: 10px solid yellow;
 }
 .green{
+    position: absolute;
+    margin-left: 210px;
+    margin-top: 60px;
     border: 10px solid green;
 }
