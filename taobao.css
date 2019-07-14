@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+
+.nav1{
+    border: 1px solid red;
+}
 .left_ul {
     list-style: none;
     text-decoration: none;
