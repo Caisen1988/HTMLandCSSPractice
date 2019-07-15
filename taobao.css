@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+body, button, input, select, textarea {
+    font: 12px/1.5 tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+}
 
 a{
     text-decoration: none;
@@ -9,13 +12,41 @@ a{
 }
 .nav1{
     border: 1px solid red;
-    font-size: 12px;
+    display: inline-block;
 }
 
-.nav1-left{
+.nav1-left {
+    float: left;
     list-style: none;
+    font-size: 12px;
+    height: 35px;
+    line-height: 35px;
+    margin-right: 500px;
+}
+
+.nav1-right {
+    float: right;
+    list-style: none;
+    font-size: 12px;
+    height: 35px;
+    line-height: 35px;
+}
+.nav1 .nav1-region{
+    margin-right: 7px;
+    display: inline-block;
 }
 
 .nav1 .nav1-item{
+    margin-right: 7px;
+    display: inline-block;
+}
+
+.nav1 .nav1-item .h {
+    color: #f22e00;
+}
+
+.nav1-right {
+    list-style: none;
+    font-size: 12px;
     float: left;
 }
