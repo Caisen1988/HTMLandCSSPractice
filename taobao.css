@@ -3,10 +3,19 @@
     padding: 0;
 }
 
+a{
+    text-decoration: none;
+    color:#6C6C6C;
+}
 .nav1{
     border: 1px solid red;
+    font-size: 12px;
 }
-.left_ul {
+
+.nav1-left{
     list-style: none;
-    text-decoration: none;
+}
+
+.nav1 .nav1-item{
+    float: left;
 }
