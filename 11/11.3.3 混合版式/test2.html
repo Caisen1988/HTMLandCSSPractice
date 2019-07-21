@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style type="text/css">
+/*----------------------------------------------
+ *页面基本属性*/
+html, body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+body {
+    text-align: center;
+    text-shadow: 1px 1px 1px #A4A4A4;
+    /*padding-left:240px;*/
+}
+a {
+    color: #006;
+}
+/*页面基本属性结束
+----------------------------------------------*/
+
+/*----------------------------------------------
+ *装饰*/
+div#header {
+    background: #EEE;
+    color: #79B30B;
+}
+div#navigation {
+    background: #B9CAFF;
+    color: #FF8539;
+}
+div#extra {
+    background: #FF8539;
+    color: #B9CAFF;
+}
+div#footer {
+    background: #444;
+    color: #ddd;
+}
+/*-----------------------------*/
+div#header {
+    height: 100px;
+    line-height: 100px;
+}
+div#content {
+    height: 200px;
+    line-height: 200px;
+}
+div#navigation {
+    height: 200px;
+    line-height: 200px;
+}
+div#extra {
+    height: 100px;
+    line-height: 100px;
+}
+div#footer {
+    height: 60px;
+    line-height: 60px;
+}
+/*装饰结束
+----------------------------------------------*/
+ 
+/*----------------------------------------------
+ *布局*/
+
+div#wrapper {/* 主栏外包含框 */
+    float:left;                                	/* 向左浮动 */
+    width:100%                               	/* 满屏宽度 */
+}
+div#content {/* 主栏内包含框 */
+    margin-left:200px                         	/* 左侧外边距，预留空间 */
+}
+div#navigation {/* 导航栏 */
+    float:left;                                  	/* 向左浮动 */
+    width:200px; /* 固定宽度，保持与主栏左侧的预留区域的宽度一致 */
+    margin-left:-100% /* 通过取左外边距负值，向左强制移动到主栏左侧的预留区域 */
+}
+div#extra {/* 其他栏 */
+    clear:left;                               	/* 清除左右浮动 */
+    width:100%                               	/* 固定宽度 */
+}
+
+
+/*布局结束
+----------------------------------------------*/
+</style>
+</head>
+<body>
+<div id="container">
+    <div id="header">
+        <h1>页眉区域</h1>
+    </div>
+    <div id="wrapper">
+        <div id="content">
+            <p><strong>1.主体内容区域</strong></p>
+        </div>
+    </div>
+    <div id="navigation">
+        <p><strong>2.导航栏</strong></p>
+    </div>
+    <div id="extra">
+        <p><strong>3.其他栏目</strong></p>
+    </div>
+    <div id="footer">
+        <p>页脚区域</p>
+    </div>
+</div>
+</body>
+</html>

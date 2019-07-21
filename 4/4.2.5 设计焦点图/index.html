@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>焦点图</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+}
+#menu {                          /*dl标记类样式*/
+    position: relative;               /*相对定位*/
+    height: 454px;                 /*高度*/
+    width: 730px;                 /*宽度*/
+    background: #ccc;              /*dl标记的背景颜色*/
+    text-align: center;
+    margin: 6px auto;
+}
+#menu dt {                         /*dt样式类*/
+    position: absolute;             /*绝对定位*/
+    right: 5px;                   /*右边框离父级元素的距离*/
+    bottom: 5px;                 /*下边框离父级元素的距离*/
+}
+#menu dt a {                      /*a样式类*/
+    float: left;                  /*左对齐*/
+    display: block;              /*定义为块级元素*/
+    padding: 1px 4px;
+    border: 1px solid #ccc;       /*为列表项加边框*/
+    margin-left: 2px;
+    text-decoration: none;        /*不显示下划线*/
+    color: #309;               /*字体颜色*/
+    background: #999;
+    font-size: 12px;
+}
+#menu dt a:hover {               /*鼠标悬停时的a样式类*/
+    background: #fff;
+    color: #FF0000;
+}
+#menu dd {               /*dd类样式*/
+    width: 730px;       /*宽度*/
+    height: 454px;       /*高度*/
+    overflow: hidden;    /*隐藏溢出*/
+}
+</style>
+</head>
+<body>
+<dl id="menu">
+    <dt>
+        <a href="#img1">1</a>
+        <a href="#img2">2</a>
+        <a href="#img3">3</a>
+        <a href="#img4">4</a>
+    </dt>
+    <dd>
+        <img src="images/1.jpg" id="img1"/>
+        <img src="images/2.jpg" id="img2"/> 
+        <img src="images/3.jpg" id="img3"/>
+        <img src="images/4.jpg" id="img4"/>
+    </dd>
+</dl>
+</body>
+</html>

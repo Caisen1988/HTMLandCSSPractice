@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>test</title>
+<style type="text/css">
+.red {color:red;}
+.blue {color:blue;}
+</style>
+<script>
+
+
+
+</script>
+</head>
+<body>
+
+<script>
+window.onload = function() {
+	// 所有类名生成数组
+	var classNameArray = document.getElementById("red").className.split(" ");
+	// 遍历数组
+	for(var i in classNameArray ){
+		// 当前class名
+		 alert(classNameArray[i]);
+	}
+}
+</script>
+<div id="red" class="red blue">红盒子</div>
+
+
+
+</body>
+</html>

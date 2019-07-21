@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<title></title>
+<meta charset="utf-8">
+<style>
+body {
+    font: 14px Trebuchet MS, Arial, Helvetica, Sans-Serif;
+    text-align: center;
+    background-color: #000;
+}
+#myform {
+    margin: 0 auto;
+    text-align: left;
+    padding-top: 1.5em;
+    color: #246878;
+    width: 350px;
+    border: solid 1px #ddd;
+    background: #fbfaf4 url(images/bg.gif) repeat-y;
+}
+#myform h3 {
+    margin: 0 20px;
+    height: 28px;
+    text-indent: -8000px;
+    background: url(images/heading.gif) no-repeat;
+}
+#myform fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+    padding-bottom: 1em;
+}
+#myform p {
+    margin: 0.6em 20px;
+}
+.special, #myform textarea {
+    width: 302px;
+    border: 1px solid #246878;
+    background: #fff;
+    padding: 5px 3px;
+}
+.radio {
+    width: 30px;
+}
+#myform textarea {
+    height: 125px;
+    overflow: auto;
+}
+#myform p.submit {
+    text-align: right;
+}
+#myform button {
+    margin: 0;
+    padding: 0;
+    text-indent: -8000px;
+    overflow: hidden;
+    width: 88px;
+    height: 56px;
+    border: none;
+    background: url(images/button.gif) no-repeat 0 0;
+    cursor: pointer;
+    text-align: left;
+}
+</style>
+</head>
+<body>
+<form id="myform">
+    <h3>反馈表</h3>
+    <fieldset>
+        <p>姓名:
+            <input class="special" type="text" name="name">
+        </p>
+        <p>性别:
+            <input class="radio" type="radio"  name="" value="">
+            男
+            <input class="radio" type="radio"  name="" value="">
+            女 </p>
+        <p>邮箱:
+            <input  class="special" type="text" name="email">
+        </p>
+        <p>网址：
+            <input   class="special"type="text" name="web">
+        </p>
+        <p>反馈意见:
+            <textarea name="message" cols="30" rows="10"></textarea>
+        </p>
+        <p class="submit">
+            <button type="submit"></button>
+        </p>
+    </fieldset>
+</form>
+</body>
+</html>

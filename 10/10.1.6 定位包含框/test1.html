@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style type="text/css">
+#wrap {/* 定位包含块 */
+    position: absolute;                           	/* 绝对定位 */
+    left: 50%;                              	 	/* x轴坐标 */
+    top: 50%;                               		/* y轴坐标 */
+    width: 200px;                            		/* 宽度 */
+    height: 100px;                             	/* 高度 */
+    border: dashed 1px blue;                      	/* 虚线框 */
+}
+#box {/* 定位方块 */
+    position: absolute;                           	/* 绝对定位 */
+    left: -50%;                              	 	/* x轴坐标 */
+    top: -50%;                             	  	/* y轴坐标 */
+    width: 200px;                          	   	/* 宽度 */
+    height: 100px;                             	/* 高度 */
+    background: red;                            	/* 背景色 */
+    text-align:center;
+    line-height:100px;
+    color:#fff;
+}
+</style>
+</head>
+<body>
+<div id="wrap">
+    <div id="box">定位对象居中显示</div>
+</div>
+</body>
+</html>

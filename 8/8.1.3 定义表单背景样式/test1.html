@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<STYLE type="text/css">
+body {
+    color: #666;
+    background-color: #CCCCCC;
+    font-size: 14px;
+}
+#fieldset h2 {
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+#fieldset label {
+    padding: 0.2em;
+    margin: 0.4em 0px 0px;
+    float: left;
+    width: 70px;
+    text-align: right;
+}
+.textfield {
+    border: #fff 0px solid;
+    padding: 4px 8px;
+    margin: 3px;
+    width: 240px;
+    height: 20px;
+    background: url(images/textfield_bg.gif) no-repeat;
+    background-size: cover;
+    color: #FF00FF;
+    font-size: 1.1em;
+}
+textarea {
+    border: #fff 0px solid;
+    padding: 8px;
+    margin: 3px;
+    height: 200px;
+    width: 400px;
+    background: url(images/textarea_bg.gif) no-repeat;
+    background-size: cover;
+    color: #FF00FF;
+    font-size: 1.1em;
+}
+.submit {
+    border: #fff 0px solid;
+    margin: 6px;
+    width: 120px;
+    height: 30px;
+    background: url(images/submit.gif) no-repeat;
+    background-size: cover;
+    color: #666;
+    font-size: 1.1em;
+}
+</STYLE>
+</head>
+<body>
+<form id="fieldset" action="#" method="post">
+    <h2>联系表单</h2>
+    <label for="name">姓名</label>
+    <input class="textfield" id="name" name="name">
+    <br>
+    <label for="email">Email</label>
+    <input class="textfield" id="email" name="email">
+    <br>
+    <label for="website">网址</label>
+    <input class="textfield" id="website" value="http://" name="website">
+    <br>
+    <label for="comment">反馈</label>
+    <textarea class="textarea" id="comment" name="comment" rows="15" cols="30"></textarea>
+    <br>
+    <label for="submit">&nbsp;</label>
+    <input class="submit" id="submit" type="submit" value="提  交" name="submit">
+</form>
+
+<!--表单是网站至关重要的组成部分。
+从非常简单、直接的表单，到花哨、多彩和创意的表单，每个网站都会呈现一种表单风格。当考虑站点的界面设计时，这必定是你应该关注的元素。不论是登录/注册表单，还是联系表单，或者其他类型表单，我们需要牢记一点：这些表单的目标是要赢得用户的注意，让他们想要在其 中填入信息。
+--></body>
+</html>

@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style type="text/css">
+/*----------------------------------------------
+ *页面基本属性*/
+html, body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+body {
+    text-align: center;
+    text-shadow: 1px 1px 1px #A4A4A4;
+    /*padding-left:240px;*/
+}
+a {
+    color: #006;
+}
+/*页面基本属性结束
+----------------------------------------------*/
+
+/*----------------------------------------------
+ *装饰*/
+div#header {
+    background: #EEE;
+    color: #79B30B;
+}
+div#navigation {
+    background: #B9CAFF;
+    color: #FF8539;
+}
+div#extra {
+    background: #FF8539;
+    color: #B9CAFF;
+}
+div#footer {
+    background: #444;
+    color: #ddd;
+}
+/*-----------------------------*/
+div#header {
+    height: 100px;
+    line-height: 100px;
+}
+div#content {
+    height: 200px;
+    line-height: 200px;
+}
+div#navigation {
+    height: 200px;
+    line-height: 200px;
+}
+div#extra {
+    height: 100px;
+    line-height: 100px;
+}
+div#footer {
+    height: 60px;
+    line-height: 60px;
+}
+/*装饰结束
+----------------------------------------------*/
+ 
+/*----------------------------------------------
+ *布局*/
+
+
+div#wrapper {/* 主栏外框 */
+    float:right;                                 	/* 向右浮动 */
+    width:100%;                               	/* 液态宽度 */
+    margin-right:-33%;                          	/* 右侧外边距，负值向右缩进 */
+}
+div#content {/* 主栏内框 */
+    margin-right:33%;                          	/* 右侧外边距，正值填充缩进 */
+}
+div#navigation {/* 导航栏 */
+    float:left;                               	/* 向右浮动 */
+    width:32.9%;                              	/* 固定宽度 */
+}
+div#extra {/* 其他栏 */
+    float:left;                                	/* 向左浮动 */
+    clear:left;                               	/* 清除左侧浮动，避免同行显示 */
+    width:32.9%                              	/* 固定宽度 */
+}
+div#footer {/* 页眉区域 */
+    clear:both;                                	/* 清除两侧浮动，强迫外框撑起 */
+    width:100%                              	/* 宽度 */
+}
+body { overflow-x:hidden;}
+
+/*布局结束
+----------------------------------------------*/
+</style>
+</head>
+<body>
+<div id="container">
+    <div id="header">
+        <h1>页眉区域</h1>
+    </div>
+    <div id="wrapper">
+        <div id="content">
+            <p><strong>1.主体内容区域</strong></p>
+        </div>
+    </div>
+    <div id="navigation">
+        <p><strong>2.导航栏</strong></p>
+    </div>
+    <div id="extra">
+        <p><strong>3.其他栏目</strong></p>
+    </div>
+    <div id="footer">
+        <p>页脚区域</p>
+    </div>
+</div>
+</body>
+</html>

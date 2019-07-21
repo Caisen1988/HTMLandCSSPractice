@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style type="text/css">
+div {
+    width: 150px;              		/* 调整所有栏目宽度 */
+    height: 300px;            		/* 调整所有栏目高度 */
+    color: white;                 	/* 包含文本的字体颜色 */
+    text-align: center;             	/* 包含文本水平居中 */
+    line-height: 100px;           	/* 包含文本垂直居中 */
+}
+#box1 {
+    background: red;
+}          	/* 红色背景 */
+#box2 {
+    background: blue;
+}         	/* 蓝色背景 */
+#box3 {
+    background: green;
+}       	/* 绿色背景 */
+/*--------------------------------------------------------------------*/
+div {
+    float: left;            	/* 全部左浮动 */
+}
+#box1 {
+    margin-left: 150px;     	/* 栏目1增加1倍宽度的左外边距 */
+    display: inline;       	/* 声明行内显示 */
+}
+#box2 {
+    float: right;            	/* 栏目2向右浮动 */
+}
+#box3 {
+    margin-left: -300px;  	/* 栏目3取负2倍宽度的左外边距 */
+}
+</style>
+</head>
+
+<body>
+<div id="box1">第1栏（①）</div>
+<div id="box2">第2栏（②）</div>
+<div id="box3">第3栏（③）</div>
+</body>
+</html>

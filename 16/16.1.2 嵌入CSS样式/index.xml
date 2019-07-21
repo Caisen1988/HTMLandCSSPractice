@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css"?>
+<poetry xmlns:html="http://www.w3.org/1999/xhtml">
+    <html:style>
+	poetry {
+		background-color: #FFC;
+		display: block;
+		margin: 2em;
+	}
+	head {
+		display: block;
+		font-size: 32px;
+		color: red;
+		text-align: center;
+	}
+	author {
+		display: block;
+		font-size: 20px;
+		color: blue;
+		text-align: center;
+		margin:12px 0;
+	}
+	content {
+		display: block;
+		font-size: 16px;
+		color: green;
+		text-align: center;
+		line-height:1.8em;
+		padding-left: 2em;
+	}
+	</html:style>
+    <head>静夜思</head>
+    <author>李白</author>
+    <content>床前明月光，疑是地上霜。</content>
+    <content>举头望明月，低头思故乡。</content>
+</poetry>

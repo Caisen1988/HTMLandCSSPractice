@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style type="text/css">
+.wrapper {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+}
+.wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+}
+.header {
+    background: tomato;
+}
+.footer {
+    background: lightgreen;
+}
+.main {
+    text-align: left;
+    background: deepskyblue;
+}
+.aside-1 {
+    background: gold;
+}
+.aside-2 {
+    background: hotpink;
+}
+
+@media all and (min-width: 600px) {
+.aside {
+    flex: 1 auto;
+}
+}
+
+@media all and (min-width: 800px) {
+.main {
+    flex: 2 0px;
+}
+.aside-1 {
+    order: 1;
+}
+.main {
+    order: 2;
+}
+.aside-2 {
+    order: 3;
+}
+.footer {
+    order: 4;
+}
+}
+</style>
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">标题栏</header>
+    <article class="main">
+        <p>主要内容栏</p>
+    </article>
+    <aside class="aside aside-1">侧栏1</aside>
+    <aside class="aside aside-2">侧栏2</aside>
+    <footer class="footer">页脚栏</footer>
+</div>
+</body>
+</html>

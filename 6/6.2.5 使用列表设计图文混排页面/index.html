@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+</head>
+<style>
+* {							   /*网页中所有标签的共同样式*/
+    margin: 0; 				   	/*外边框为0*/
+    padding: 0; 					/*内边框为0*/
+    font-size: 12px; 				/*字体大小*/
+    color: #000; 					/*字体颜色*/
+    list-style: none;					/*不显示项目符号*/
+}
+a {								/*定义网页中所有的a标签样式*/
+    color: #03c;
+    text-decoration: none;			/*不显示下划线*/
+}
+a:hover {
+    text-decoration: underline;		/*当鼠标经过时，显示下划线*/
+}
+#container { 						/*container容器样式*/
+    width: 418px; 					/*宽度*/
+    margin: 30px auto; 				/*上下补白是30px，左右为auto ，显示为居中的效果*/
+    border: 1px solid #999;			/*边框样式*/
+}
+.title {								 /*定义title样式*/
+    width: 418px; 						 /*title块的宽度*/
+    height: 32px; 						 /*title块的高宽*/
+    border-bottom: 1px solid #999; 		 /*添加底部边框*/
+    background: #f2f9fd; 				 /*背景颜色*/
+}
+.title h3 { 							 /*定义title部分*/
+    float: left; 				   		 /*左浮动*/
+    line-height: 32px; 					 /*行间距，实现文字垂直居中*/
+    padding-left: 20px;					 /*左侧内间距*/
+}
+.title ul { 								 /*title中列表样式*/
+    float: right; 				    	 /*右浮动*/
+    width: 230px;					     /*列表宽度*/
+}
+.title ul li { 							 /*li标签样式*/
+    float: left;
+    line-height: 32px; 					 /*行间距*/
+    padding: 0 5px;					 /*左右补白5px*/
+}
+.title ul li a { 							/*a标签样式*/
+    color: #333;						/*字体颜色*/
+}
+.content {									/*content块样式*/
+    height: 100px;							/*块高宽*/
+    margin-left: 15px; 						/*左侧补白*/
+    padding: 15px 0 8px 0; 					/*顶部内边距15px 底部内边距8px*/
+    border-bottom: 1px dotted #9AC4E9;		/*底部边框*/
+}
+.content p {								/*content块中p标签样式*/
+    float: left; 							/*左浮动，使p标签下的图片和标题靠左*/
+    width: 156px;							/* p标签的宽度*/
+}
+.content p a { 								/*a标签样式*/
+    display: block; 						/*定义a标签为块级元素*/
+}
+.content p a:hover {
+    border: 1px dashed #00f;					/*当鼠标经过时显示边框*/
+}
+.content span a {							/*content块下的span标签样式也就是标题样式*/
+    height: 22px; 							/*高宽*/
+    line-height: 22px; 						/*文字实现垂直居中*/
+    text-align: center;						/*水平居中*/
+}
+.content span a:hover { 						/*鼠标经过时的span标签样式*/
+    border: 0; 								/*清除边框*/
+    color: #c00;								/*字体颜色*/
+}
+.content ul {						 /*content中ul样式*/
+    float: right; 				     /*右浮动*/
+    width: 216px; 					 /*ul宽度*/
+    margin: 5px 0px;				 /*设置上下补白*/
+}
+.content ul li a:hover { 				 /*鼠标经过时的li效果*/
+    color: red;
+}
+.clear { 							 /*清除左右浮动*/
+    clear: both;
+}
+a img {
+    border: none;
+}
+.content p>a { 								/*a标签样式*/
+    display: block; 						/*定义a标签为块级元素*/
+    border: 1px solid #00f;
+}
+.content p>a:hover {
+    border: 1px solid #f00;					/*当鼠标经过时显示边框*/
+}
+</style>
+
+<body>
+<div id="container">
+    <div class="title">
+        <h3>最新最快的财经资讯</h3>
+        <ul>
+            <li><a href="#">最新资讯</a></li>
+            <li><a href="#">国际财经</a></li>
+            <li><a href="#">汽车房产</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <p><a href="#"><img src="images/1.jpg"/></a> <span><a href="#">最新资讯</a></span> </p>
+        <ul>
+            <li><a href="#">A股恐慌式跳水重挫3.68% 大盘跌回</a></li>
+            <li><a href="#">股指缓慢企稳 黄金板块逆市上涨</a></li>
+            <li><a href="#">港股后市堪忧 韩国股市暂停交易</a></li>
+            <li><a href="#">中国万亿美债或面临缩水</a></li>
+            <li><a href="#">日经指数收低</a></li>
+            <li><a href="#">七国集团发联合声明称将保证金融</a></li>
+            <li><a href="#">标普或再降美信用评级</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <p> <a href="#"><img src="images/2.jpg"/></a> <span><a href="#">国际财经</a></span> </p>
+        <ul>
+            <li><a href="#">埃及股市跌至两年来最低点 </a></li>
+            <li><a href="#">默多克传媒帝国经济根基稳固</a></li>
+            <li><a href="#">G7将商讨美国国债降级问题</a></li>
+            <li><a href="#">贸易保护剑指“中国制造”</a></li>
+            <li><a href="#">欧洲央行出手购入意西两国国债</a></li>
+            <li><a href="#">以色列股市7日暴跌</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <p> <a href="#"><img src="images/3.jpg"/></a> <span><a href="#">汽车房产</a></span> </p>
+        <ul>
+            <li><a href="#">发改委称成品油价暂不具备下调条件</a></li>
+            <li><a href="#">一汽-大众取缔二级经销商</a></li>
+            <li><a href="#">英菲尼迪首款车M系</a></li>
+            <li><a href="#">前7月北京豪宅成交逆市增两成</a></li>
+            <li><a href="#">李嘉诚称继续看好内地楼市</a></li>
+            <li><a href="#">调查显示50未限购城市外地人购房</a></li>
+            <li><a href="#">首套房贷利率北京外资银行能打折</a></li>
+        </ul>
+    </div>
+    <div class="clear"></div>
+</div>
+</body>
+</html>

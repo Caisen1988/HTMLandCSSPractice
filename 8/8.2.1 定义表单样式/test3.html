@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<STYLE type="text/css">
+.title {
+    width: 100px;                              	/* 宽度 */
+    float: left;                                 	/* 向左浮动 */
+    text-align: right;                            	/* 文本右对齐 */
+    font-weight: bold;                       	  	/* 加粗提示文本 */
+}
+.center {
+    text-align: center;
+}
+#form1 {
+    text-align: center;                           	/* 定义表单内对象居中显示 */
+}
+#form1 fieldset {
+    width: 500px;                              	/* 定义表单区域宽度 */
+    margin: 0 auto;                             	/* 文本对象居中显示 */
+    text-align: left;                             	/* 文本左对齐 */
+}
+#form1 #textfield {/* 文本框样式 */
+    width: 16em;                          	   	/* 文本框的宽度 */
+    border: solid 1px #aaa;                       	/* 文本框的边框样式 */
+    font-size: 14px;                             	/* 字体大小 */
+    color: #666;                            	 	/* 字体颜色 */
+    position: relative;                            	/* 相对定位 */
+    top: -3px;                                 	/* 向上移动位置 */
+}
+#form1 #textarea {/* 文本区域样式 */
+    width: 30em;                            	 	/* 文本区域宽度 */
+    height: 8em;                            	 	/* 高度 */
+    border: solid 1px #aaa;                       	/* 边框样式 */
+    font-size: 12px;                             	/* 字体大小 */
+    color: #666;                               	/* 字体颜色 */
+}
+.checkbox {/* 复选框样式类 */
+    border: solid 1px #fff;                        	/* 边框样式 */
+    position: relative;                         	 	/* 相对定位 */
+    top: 3px;                                  	/* 向下移动位置 */
+    left: -2px;                                 	/* 向左移动位置 */
+}
+#radio {/* 单选按钮样式 */
+    border: solid 1px #fff;                        	/* 边框样式 */
+    position: relative; 								/* 相对定位 */
+    top: 3px;                                  	/* 向下移动位置 */
+    left: -1px;                                  	/* 向左移动位置 */
+}
+</STYLE>
+</head>
+<body>
+<form id="form1" name="form1" method="post" action="">
+    <fieldset>
+        <legend>表单结构</legend>
+        <p>
+            <label for="textfield"  class="title">文本框：</label>
+            <input type="text" name="textfield" id="textfield" />
+        </p>
+        <p>
+            <label for="textarea"  class="title">文本区域：</label>
+            <textarea name="textarea" id="textarea" cols="45" rows="5"></textarea>
+        </p>
+        <p><span class="title">复选框：</span>
+            <label for="checkbox">a</label>
+            <input type="checkbox" name="checkbox" id="checkbox" />
+            <label for="checkbox2">b</label>
+            <input type="checkbox" name="checkbox2" id="checkbox2" />
+            <label for="checkbox3">c</label>
+            <input type="checkbox" name="checkbox3" id="checkbox3" />
+        </p>
+        <p><span class="title">单选按钮：</span>
+            <label for="radio">a</label>
+            <input type="radio" name="radio" id="radio" value="radio" />
+            <label for="radio2">b</label>
+            <input type="radio" name="radio2" id="radio2" value="radio2" />
+            <label for="radio3">c</label>
+            <input type="radio" name="radio3" id="radio3" value="radio3" />
+        </p>
+        <p>
+            <label for="select"  class="title">下载菜单：</label>
+            <select name="select" id="select">
+                <option value="1">a</option>
+                <option value="2">b</option>
+                <option value="3">c</option>
+            </select>
+        </p>
+        <p class="center">
+            <input type="submit" name="button" id="button" value="提交" />
+            <input type="reset" name="button2" id="button2" value="重置" />
+        </p>
+    </fieldset>
+</form>
+</body>
+</html>

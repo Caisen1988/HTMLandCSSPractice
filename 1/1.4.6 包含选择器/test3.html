@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style type="text/css">
+
+.level1 { color:red;}/*定义模块颜色为红色*/
+.level1 p{ color:#333;}/*跨层包含，定义模块内段落的颜色为深灰色*/
+.level1 { color:red;}/*定义模块颜色为红色*/
+.level1 span p { color:#333;}/*多层包含，定义模块内段落的颜色为深灰色*/
+
+
+</style>
+</head>
+<body>
+<div class="level1"><!—父对象-->
+    一级嵌套
+    <h2><!—子对象-->
+        二级嵌套    
+    </h2>
+    <span><!—子对象-->
+        <p><!—孙对象-->
+            三级嵌套    
+        </p>
+    </span>
+</div>
+</body>
+</html>

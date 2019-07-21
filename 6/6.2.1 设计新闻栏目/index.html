@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<title></title>
+<style>
+body {	/*网页基本属性*/
+    font: 13px "黑体";	/*字体样式*/
+    background-color: #99CCFF;
+}
+p {	/*新闻栏目的文本样式*/
+    margin: 5px 0 0 5px; 	/*新闻栏目文字上下补白*/
+    color: #3333FF;
+    font-size: 15px;
+    font-weight: bold;
+}
+p span { 	/*文字“more…”的显示样式*/
+    color: #FF0000;
+    float: right;	/*右对齐*/
+}
+div {								/*每一个新闻栏目块的样式*/
+    line-height: 16pt;  			/*行间距*/
+    width: 400px;					/*块的宽度*/
+    margin: 10px 0 0 10px;			/*各个新闻块之间距离*/
+}
+.junshi {							/*第一个栏目的样式*/
+    border: 5px #FFcc00 dotted;		/*边框样式*/
+}
+.caijing {							/*第二个栏目的样式*/
+    border: 2px #FF0000 dashed;
+}
+.yule {							/*第三个栏目的样式*/
+    border: 2px #ff33FF solid;
+}
+.junshi ul {							/*第一个新闻块的列表样式*/
+    margin-left: 40px;				/*文字左侧离边框的距离*/
+    list-style-type: upper-alpha;		/*项目符号是大写字母*/
+}
+.caijing ol {							/*第二个新闻块的列表样式*/
+    margin-left: 40px;
+    list-style-type: upper-roman;		/*项目符号是大写罗马字母*/
+}
+.yule ul {							/*第三个新闻块的列表样式*/
+    margin-left: 40px;
+    list-style-type: circle;			/*项目符号是空心圆*/
+}
+li { /*li标签样式，也就是新闻标题样式*/
+    margin: 5px 0 5px 0;		/*每条新闻标题之间间隔*/
+}
+a { /*链接样式*/
+    text-decoration: none;		/*不显示下划线*/
+    color: #000;
+}
+</style>
+</head>
+<body>
+<div class="junshi">
+    <p>军事新闻<span>more...</span></p>
+    <ul>
+        <li><a href="#">英高官称世界面临冷战威胁 不重视中俄将吃亏</a> </li>
+        <li><a href="#">中没与俄一起否决涉叙提案 不想驳一国面子</a> </li>
+        <li><a href="#">战斗群配置太差:俄航母编队还不如中国辽宁舰</a> </li>
+        <li><a href="#">日将赋予自卫队新任务 海外用兵锁链再放松</a> </li>
+    </ul>
+</div>
+<div class="caijing">
+    <p>财经资讯<span>more...</span></p>
+    <ol>
+        <li><a href="#">东方资管公司正式挂牌 银监会杨家才建议改制不改向</a></li>
+        <li><a href="#">发改委再对新能源标杆电价征意见 下调或是必然趋势</a></li>
+        <li><a href="#">我国劳务税标准36年未作调整 起征点仍为800元</a></li>
+        <li><a href="#">美财政部唱多人民币：中长期稳定 汇率应更透明</a></li>
+    </ol>
+</div>
+<div class="yule">
+    <p>娱乐资讯<span>more...</span></p>
+    <ul>
+        <li><a href="#">回家办证？范冰冰李晨现身烟台甜蜜牵手</a> </li>
+        <li><a href="#">艾玛·斯通被曝与“蜘蛛侠”分手 粉丝惊叹：太可惜</a> </li>
+        <li><a href="#">郑爽陪生病外婆散步 真是个孝顺的女孩子</a> </li>
+        <li><a href="#">追星要理智！张继科呼吁：跟机追车得不偿失</a> </li>
+    </ul>
+</div>
+</body>
+</html>

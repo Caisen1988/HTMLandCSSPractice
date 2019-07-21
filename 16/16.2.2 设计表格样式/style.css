@@ -1,0 +1,45 @@
+list {
+    font-family: Arial;
+    font-size: 14px;
+    position: absolute;			/* 绝对定位 */
+    top: 0px;
+    left: 0px;
+    padding: 4px;				/* 适当的调整位置 */
+}
+caption {
+    margin-bottom: 6px;
+    font-weight: bold;
+    font-size: 1.4em;
+    text-align:center;
+    display: block;				/* 块元素 */
+}
+title {
+    background-color: #4bacff;
+    display: block;				/* 块元素 */
+    border: 1px solid #0058a3;	/* 边框 */
+    margin-bottom: -1px;			/* 解决边框重叠的问题 */
+    padding: 4px 0px 4px 0px;
+    font-weight:bold;
+}
+item {
+    display: block;				/* 块元素 */
+    background-color: #eaf5ff;	/* 背景色 */
+    border: 1px solid #0058a3;	/* 边框 */
+    margin-bottom: -1px;			/* 解决边框重叠的问题 */
+    padding: 4px 0px 4px 0px;	/* firefox不支持行内元素的padding *//* 只支持block元素的padding */
+								/* 为了尽量统一两个浏览器 */
+								/* 因此padding-top和bottom放到这里设置 */
+}
+item:nth-child(2n+1) {
+    background-color: #eee;	/* 背景色 */
+}
+name, describe {
+    padding: 2px 8px 2px 8px;
+    display: inline-block;
+}
+name {							/* firefox不支持行内元素的width属性 */
+    width: 100px;
+}
+describe {
+    width: 300px;
+}

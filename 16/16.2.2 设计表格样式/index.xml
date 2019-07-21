@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="gb2312"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+<list>
+	<caption>表格标签</caption>
+	<title>
+		<name>标签</name>
+		<describe>描述</describe>
+	</title>
+    <item>
+        <name>&lt;table&gt;</name>
+        <describe>定义表格</describe>
+    </item>
+    <item>
+        <name>&lt;caption&gt;</name>
+        <describe>定义表格标题。</describe>
+    </item>
+    <item>
+        <name>&lt;th&gt;</name>
+        <describe>定义表格中的表头单元格。</describe>
+    </item>
+    <item>
+        <name>&lt;tr&gt;</name>
+        <describe>定义表格中的行。</describe>
+    </item>
+    <item>
+        <name>&lt;td&gt;</name>
+        <describe>定义表格中的单元。</describe>
+    </item>
+    <item>
+        <name>&lt;thead&gt;</name>
+        <describe>定义表格中的表头内容。</describe>
+    </item>
+    <item>
+        <name>&lt;tbody&gt;</name>
+        <describe>定义表格中的主体内容。</describe>
+    </item>
+    <item>
+        <name>&lt;tfoot&gt;</name>
+        <describe>定义表格中的表注内容（脚注）。</describe>
+    </item>
+    <item>
+        <name>&lt;col&gt;</name>
+        <describe>定义表格中一个或多个列的属性值。</describe>
+    </item>
+    <item>
+        <name>&lt;colgroup&gt;</name>
+        <describe>定义表格中供格式化的列组。</describe>
+    </item>	
+</list>
+

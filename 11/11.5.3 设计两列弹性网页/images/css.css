@@ -1,0 +1,213 @@
+/* -- Main layout styles -- */
+
+body {
+    margin: 1em 1em 1em 1em;
+    padding: 0px;
+    font-family: verdana, sans-serif;
+    font-size: 1.0em;
+    background-color: #333;
+}
+#container {
+    float: left;
+    width: 100%;
+    color: #FFF;
+    position: relative;
+}
+/* -- Header layout/display styles -- */
+
+#intro {
+    float: left;
+    width: 100%;
+    height: 4em;
+    background: #25509F url(hdr.jpg) no-repeat bottom left;
+}
+#lresources {
+    position: absolute;
+    top: 0;
+    right: 4em;
+}
+#lresources a {
+    float: right;
+    padding: 5px 10px 5px 10px;
+    font-size: 1.2em;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFF;
+    background-color: #666;
+    border-bottom: 2px solid #333;
+    border-right: 1px solid #333;
+    border-left: 1px solid #333;
+}
+#lresources a:hover, #larchives a.active {
+    padding-top: 10px;
+    background-color: #333;
+}
+/* -- Header title and subTitle layout/display styles -- */
+
+#pageHeader {
+    background: url(corner_tl.gif) left top no-repeat;
+}
+#pageHeader h1 {
+    padding: 1em 30px 0 2em;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 0.75em;
+    letter-spacing: -0.15em;
+    color: #FC0;
+    background-image: url(corner_tr.gif);
+    background-repeat: no-repeat;
+    background-position: top right;
+    border-right: 0px;
+    margin: 0;
+}
+#pageHeader h2 {
+    padding: 0 0 0 4em;
+    text-transform: lowercase;
+    line-height: 1.2em;
+    letter-spacing: 0.01em;
+    margin: 0;
+}
+#quickSummary, #preamble {
+    display: none;
+}
+/* -- supportingText layout/display styles -- */
+
+#supportingText {
+    float: left;
+    width: 100%;
+    padding: 1em 0 1em 0;
+    background-color: #666;
+}
+#explanation {
+    float: left;
+    width: 23.3%;
+    margin-bottom: 1em;
+    background: #777 url(corner_sub_br.gif) no-repeat bottom right;
+}
+#explanation h3 {
+    background: #777 url(corner_sub_tr.gif) no-repeat top right;
+}
+#participation, #benefits, #requirements, #footer {
+    float: right;
+    width: 75%;
+}
+#participation {
+    background: #777 url(corner_sub_tl.gif) no-repeat top left;
+}
+#benefits, #requirements {
+    background: #777;
+}
+#footer {
+    text-indent: 2em;
+    padding-bottom: 12px;
+    background: #777 url(corner_sub_bl.gif) no-repeat left bottom;
+}
+h3 {
+    padding-top: 12px;
+    color: #CC9900;
+    margin: 0;
+    display: block;
+    clear: both;
+    font-weight: bold;
+    font-size: 0.8em;
+    text-transform: lowercase;
+    color: #FC0;
+    border-bottom: 1px solid #AAA;
+    margin-left: 2em;
+}
+p {
+    text-indent: 2em;
+}
+#supportingText p {
+    margin: 0.8em 1.2em;
+    font-size: 0.8em;
+    line-height: 1.8em;
+}
+#supportingText a {
+    text-decoration: none;
+    color: #FC0;
+    border-bottom: 1px solid #AAA;
+}
+#supportingText a:hover {
+    color: #DDD;
+    background-color: #888;
+    border-bottom: 1px solid #EEEEEE;
+}
+.header, .subHeader {
+    display: block;
+    clear: both;
+    font-weight: bold;
+    font-size: 0.8em;
+    text-transform: lowercase;
+    color: #FC0;
+    border-bottom: 1px solid #AAA;
+}
+.subHeader {
+    border: 0px;
+}
+/* -- supportingText left site links (large plus icon) -- */
+
+#supportingText a.menuItem {
+    display: block;
+    padding: 5px 0 5px 54px;
+    background: url(icn_plus.gif) no-repeat center left;
+    border: 0px;
+}
+#supportingText a:hover.menuItem {
+    color: #DDD;
+    background: #888 url(icn_plus_on.gif) no-repeat center left;
+    border: 0px;
+}
+/* -- Footer layout/display styles -- */
+
+#linkList {
+    float: left;
+    width: 100%;
+    height: 6em;
+    margin-bottom: 1em !important;
+    margin-bottom: 0;
+    font-size: 0.6em;
+    text-transform: lowercase;
+    line-height: 3em;
+    color: #0AD;
+    background: #25509F url(hdr.jpg) repeat-y top left;
+}
+#linkList h3 {
+    display: none;
+}
+#linkList ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    clear: left;
+}
+#linkList li {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 6px;
+}
+#linkList li {
+    margin-left: 6px;
+}
+#linkList2 {
+    float: left;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    background: url(corner_bl.gif) no-repeat bottom left;
+}
+#larchives {
+    width: 100%;
+    background: url(corner_br.gif) no-repeat bottom right;
+}
+#linkList a {
+    color: #0AD;
+}
+#linkList a:hover {
+    color: #666666;
+}

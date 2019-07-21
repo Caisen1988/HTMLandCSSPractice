@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style type="text/css">
+body {
+    background: #ffff99;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+#form1 {
+    width: 450px;
+    background: #fff;
+    text-align: left;
+    padding: 12px 32px;
+    margin: 0 auto;
+    font-size: 13px;
+}
+#form1 h2 {
+    border-bottom: dotted 1px #ddd;
+    text-align: center;
+    font-weight: normal;
+}
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+input, select {
+    border: groove #ccc 1px;
+    padding: 4px;
+    color:blue;
+}
+
+.label {
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 0.7em;
+}
+#save {
+    padding:8px 16px;
+    border:solid 1px #666;
+    color:red;
+}
+
+</style>
+</head>
+
+<body>
+<form  id="form1" action="#public" method="post">
+    <h2>个人信息注册</h2>
+    <ul>
+        <li class="label">姓名</li>
+        <li>
+            <input name="name" id="name" size="20">
+        </li>
+        <li class="label">职业</li>
+        <li>
+            <input name="work" id="work" size="25">
+        </li>
+        <li class="label">详细地址</li>
+        <li>
+            <input name="address" id="address" size="50">
+        </li>
+        <li class="label">邮编</li>
+        <li>
+            <input name="code" id="code" size="12" maxlength="12">
+        </li>
+        <li class="label">省市</li>
+        <li>
+            <input id="city" name="city">
+        </li>
+        <li class="label">国家</li>
+        <li>
+            <select id="country" name="country">
+                <option value="china">china</option>
+                <option value="armenia">armenia</option>
+                <option value="australia">australia</option>
+                <option value="italy">italy</option>
+                <option value="japan">japan</option>
+            </select>
+        </li>
+        <li class="label">Email</li>
+        <li>
+            <input id="email" name="email" maxlength="255">
+        </li>
+        <li class="label">电话</li>
+        <li>
+            <input name="tel1" id="tel1" maxlength="3" size="6">
+            -
+            <input name="tel2" id="tel2" maxlength="8" size="16">
+        </li>
+        <li class="label">
+            <input name="save" id="save"  type="submit" value="提 交">
+        </li>
+    </ul>
+</form>
+</body>
+</html>

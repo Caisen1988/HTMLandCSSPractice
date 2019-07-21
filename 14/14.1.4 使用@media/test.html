@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style type="text/css">
+.wrapper {
+    padding: 5px 10px;
+    margin: 40px;
+    text-align: center;
+    border: solid 1px #999;
+    color: #999;
+}
+.viewing-area span {
+    color: #666;
+    display: none;
+}
+
+/* max-width:如果视图窗口的宽度小于600像素，则醒目显示，并显示提示性的文字 */
+@media screen and (max-width: 600px) {
+.one {
+    background: red;
+    border: solid 1px #000;
+    color: #fff;
+}
+span.lt600 {
+    display: inline-block;
+}
+}
+
+/* min-width:如果视图窗口的宽度大于900像素，则醒目显示，并显示提示性的文字*/
+@media screen and (min-width: 900px) {
+.two {
+    background: red;
+    border: solid 1px #000;
+    color: #fff;
+}
+span.gt900 {
+    display: inline-block;
+}
+}
+
+/* min-width & max-width：如果视图窗口的宽度小于600像素，则醒目显示，并显示提示性的文字*/
+@media screen and (min-width: 600px) and (max-width: 900px) {
+.three {
+    background: red;
+    border: solid 1px #000;
+    color: #fff;
+}
+span.bt600-900 {
+    display: inline-block;
+}
+}
+
+/* max device width：下面样式应用于IE iPhone设备，且设备最大宽度为480像素 */
+@media screen and (max-device-width: 480px) {
+.iphone {
+    background: #ccc;
+}
+}
+</style>
+</head>
+<div class="wrapper one">窗口宽度小于600像素</div>
+<div class="wrapper two">窗口宽度大于900像素</div>
+<div class="wrapper three">窗口宽度介于600像素到900像素之间</div>
+<div class="wrapper iphone">IE iPhone设备，最大宽度为480像素。</div>
+<p class="viewing-area"><strong>当前视图宽度:</strong><span class="lt600">小于600px</span><span class="bt600-900">在600 - 900px之间</span><span class="gt900">大于900px</span></p>
+<body>
+</body>
+</html>

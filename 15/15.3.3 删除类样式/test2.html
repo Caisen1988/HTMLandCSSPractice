@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>test</title>
+<style type="text/css">
+.red {color:red;}
+.blue {color:blue;}
+</style>
+<script type="text/javascript">
+function hasClass(element,className){//类名检测函数
+	var reg =new RegExp('(\\s|^)'+ className + '(\\s|$)');
+    return  reg.test(element.className); //使用正则检测是否有相同的样式
+}　
+function deleteClass(element,className){
+	var reg =new RegExp('(\\s|^)'+ className + '(\\s|$)');
+    if(hasClass(element,className)){
+        element.className.replace(reg,' '); //利用正则捕获到要删除的样式的名称，然后把他替换成一个空白字符串，就相当于删除了
+	}
+}
+</script>
+</head>
+<body>
+
+<script>
+
+window.onload = function() {
+    var red = document.getElementById("red");
+    deleteClass(red,'blue');
+}
+</script>
+<div id="red" class="red  blue  bold">红盒子</div>
+
+</body>
+</html>
